@@ -4,7 +4,8 @@
   "info": {
     "singularName": "testimonial",
     "pluralName": "testimonials",
-    "displayName": "testimonial"
+    "displayName": "testimonial",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -32,25 +33,29 @@
       "required": true
     },
     "provider_logo": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "order": {
       "type": "integer",
       "default": 0
     },
     "company_logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      ]
+    },
+    "company_url": {
+      "type": "string",
+      "required": false
     }
   }
 }
